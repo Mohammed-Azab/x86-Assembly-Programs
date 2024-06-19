@@ -49,6 +49,7 @@ ORG 100H
                 MOV AH, 2        ; Function 2 - Write character to standard output
                 INT 21h
                 LOOP write_loop
+                RET
    ENDP
 
 
