@@ -9,7 +9,6 @@ ORG 100H
         allowableAttamp DW 99H
 
 .code
-            LEA DI, buffer
             XOR DI,DI
             MOV CX,allowableAttamp
             read_loop:
@@ -36,6 +35,7 @@ ORG 100H
                 store:
                      MOV SI ,i
                      INC i
+                     INC DI
                      MOV buffer[SI],AL
                      return:
                             RET
