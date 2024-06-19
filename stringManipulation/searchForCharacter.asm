@@ -1,10 +1,10 @@
 ORG 100H
 
-   .data segemnt
+   .data
    str DB 'exersice'
    length DB 08H
    numberOfOccurance DB 0
-.code segement
+.code
     XOR DX,DX
     XOR SI,SI
     MOV CL, length
