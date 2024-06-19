@@ -26,8 +26,8 @@ start:
     MOV CX, length
     DEC CX
     OuterLoop:
-        XOR SI, SI
-        MOV DI, CX
+        XOR SI, SI ;i
+        MOV DI, CX ;j
         InnerLoop:
             CMP SI, DI
             JE outOFInnerLoop
