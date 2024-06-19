@@ -21,13 +21,14 @@ ORG 100H
                MOV AL,str[SI]
                INC SI
                XOR DI,DI
+               XOR DX,DX
                isItVowels
                subsitute
            contiune:
                XOR DX,DX
                LOOP MainLoop
                HLT
-    quitMain :
+    quitMain:
             HLT
 
     subsitute MACRO
