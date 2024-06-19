@@ -39,4 +39,14 @@ write_loop:
     INT 21h
     LOOP write_loop
 
+
+Input and Output:
+      MOV AH, 0AH
+      MOV AX,OFFSET arr
+      INT 21H
+
+      MOV AH, 09H
+      MOV AX,OFFSET arr+2
+      INT 21H
+
 RET
