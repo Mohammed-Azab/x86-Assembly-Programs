@@ -1,13 +1,14 @@
-include 'emu8086.inc'      ;include emu8086 library to use Print Functions
-ORG 100h                   ;this directive required for a simple 1 segment .com program.
+include emu8086.inc      
+ORG 100h                   
 .data
-    newLineStr db 0Dh, 0Ah, '$' ;
+    newLineStr db 0Dh, 0Ah, '$'
+    length DW 0AH 
 
 .code
-    MAIN PROC
+    MOV CX,Length
     CMP CX,0
     JZ Terminate
-    MOV SI,CX            ;number of rows
+    MOV SI,CX         ;number of rows
     MOV DI,0          ;row number
     MOV BP,0          ;column number
     DEC BP            ;DEC BP to INC it in loop
@@ -58,11 +59,7 @@ ORG 100h                   ;this directive required for a simple 1 segment .com 
     Terminate:
         HLT
 
-     MAIN ENDP
 
-
-    ;Define functions
-    DEFINE_SCAN_NUM                      ;to get number as a input from user
     DEFINE_PRINT_NUM                     ;to print a number
     DEFINE_PRINT_NUM_UNS                 ;required for PRINT_NUM
     DEFINE_PRINT_STRING                  ;to print string
