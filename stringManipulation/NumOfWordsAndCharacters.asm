@@ -3,9 +3,11 @@ ORG 100H
 .data
     str DB 'Learning is a treasure$'
     length DW 15H
+    newline_char  DB 10     ; ASCII code for newline character '\n'
     numberOfCharacters DW 0H
     numberOfSpaces DW 0H
     numberOfWords DW 0H
+    numberOfLines DW 0H
 
 .code
     XOR DI,DI
@@ -26,7 +28,8 @@ ORG 100H
                 MOV numberOfCharacters,AX
                 HLT
 
-    CHECK PROC
+    CHECK PROC  CMP AL,newline_char
+                JE newLineDetected
                 CMP AL, 20h ;if equals to space then the word is over
                 JE wordIsOver
                 MOV DX,0
@@ -35,6 +38,9 @@ ORG 100H
                 INC numberOfWords
                 MOV DX,1
                 INC numberOfSpaces
+                RET
+    newLineDetected:
+                INC numberOfLines
                 RET
     ENDP
 
