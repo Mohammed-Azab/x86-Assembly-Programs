@@ -1,2 +1,4 @@
 # Ignore all JetBrains IDE directories
 .idea/
+/.idea
+.idea/workspace.xml
