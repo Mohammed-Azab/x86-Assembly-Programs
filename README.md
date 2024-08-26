@@ -5,10 +5,9 @@ Welcome to the x86 Assembly Programs repository! This collection features variou
 ## Table of Contents
 
 - [Folder 1: Arithmetic Operations](#folder-1-arithmetic-operations)
-- [Folder 2:  Mathematical Expressions](#folder-3-sorting-algorithms)
-- [Folder 3: String Manipulation](#folder-2-string-manipulation)
-- [Folder 4: Sorting Algorithms](#folder-3-sorting-algorithms)
-
+- [Folder 2: Mathematical Expressions](#folder-2-mathematical-expressions)
+- [Folder 3: String Manipulation](#folder-3-string-manipulation)
+- [Folder 4: Sorting Algorithms](#folder-4-sorting-algorithms)
 
 ## Folder Descriptions
 
@@ -16,52 +15,50 @@ Welcome to the x86 Assembly Programs repository! This collection features variou
 
 This folder contains programs related to basic arithmetic operations.
 
-- **[Square Elements](arithmetic_operations/squareElements.asm)**
+- **[Square Elements](Arithmetic/squareElements.asm)**
   - **Algorithm:** Squares each element in an array.
   - **Description:** Demonstrates how to manipulate and operate on arrays using arithmetic operations.
-    
+
 ### Folder 2: Mathematical Expressions
 
 This folder contains programs that deal with mathematical expressions and patterns.
 
-- **[Pascal's Triangle](mathematical_expressions/pascalTriangle.asm)**
+- **[Pascal's Triangle](MathExpressions/pascalTriangle.asm)**
   - **Algorithm:** Generates Pascal's Triangle.
-  - **Description:** Demonstrates how to compute and display Pascal's Triangle using assembly language
-
+  - **Description:** Demonstrates how to compute and display Pascal's Triangle using assembly language.
 
 ### Folder 3: String Manipulation
 
 This folder contains programs that manipulate strings and perform text operations.
 
-- **[NumOfWords_Characters_Lines.asm](string_manipulation/NumOfWords_Characters_Lines.asm)**
+- **[NumOfWords_Characters_Lines.asm](stringManipulation/NumOfWords_Characters_Lines.asm)**
   - **Description:** Program to count the number of words, characters, and lines in a given text.
 
-- **[isItVowels.inc](string_manipulation/isItVowels.inc)**
-  - **Description:** Stores the first 10 vowels in a string. 
+- **[isItVowels.inc](stringManipulation/isItVowels.inc)**
+  - **Description:** Stores the first 10 vowels in a string.
 
-- **[numberOfVowels.asm](string_manipulation/numberOfVowels.asm)**
-  - **Description:** Counts the number of vowels in a given text. 
+- **[numberOfVowels.asm](stringManipulation/numberOfVowels.asm)**
+  - **Description:** Counts the number of vowels in a given text.
 
-- **[readingOnlyVowels.asm](string_manipulation/readingOnlyVowels.asm)**
+- **[readingOnlyVowels.asm](stringManipulation/readingOnlyVowels.asm)**
   - **Description:** Reads and processes only the vowel characters from a text.
 
-- **[searchForCharacter.asm](string_manipulation/searchForCharacter.asm)**
+- **[searchForCharacter.asm](stringManipulation/searchForCharacter.asm)**
   - **Description:** Searches for a specific character in a string.
 
-- **[storeFirst10Vowels.asm](string_manipulation/storeFirst10Vowels.asm)**
-  - **Description:** Stores the first 10 vowels in a string. 
+- **[storeFirst10Vowels.asm](stringManipulation/storeFirst10Vowels.asm)**
+  - **Description:** Stores the first 10 vowels in a string.
 
-- **[toLowerCase.asm](string_manipulation/toLowerCase.asm)**
-  - **Description:** Converts all characters in a string to lowercase. 
+- **[toLowerCase.asm](stringManipulation/toLowerCase.asm)**
+  - **Description:** Converts all characters in a string to lowercase.
 
 ### Folder 4: Sorting Algorithms
 
 This folder contains programs that implement various sorting algorithms.
 
-- **[Bubble Sort](sorting_algorithms/bubble_sort.asm)**
+- **[Bubble Sort](Sorting/bubbleSort.asm)**
   - **Algorithm:** Implements the bubble sort algorithm.
   - **Description:** Demonstrates sorting techniques using nested loops and comparisons.
-
 
 ## How to Run
 
